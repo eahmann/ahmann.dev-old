@@ -13,18 +13,10 @@ const Home: NextPage = () => {
           content="I'm currently working on personal projects to push my skills to the next level. Check out my portfolio to see what I'm working on."
         />
       </Head>
-      <header>
-        <Header />
-      </header>
+      <Header />
       <main>
         <Hero />
-        {/* <About />
-        <Experience />
-        <Projects /> */}
       </main>
-      {/* <footer>
-        <Footer />
-      </footer> */}
     </>
   )
 }

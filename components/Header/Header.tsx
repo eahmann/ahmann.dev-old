@@ -52,6 +52,7 @@ const Header: React.FC<HeaderProps> = () => {
             <NavLink href={'#about'}>About</NavLink>
             <NavLink href={'#experience'}>Experience</NavLink>
             <NavLink href={'#projects'}>Projects</NavLink>
+            <NavLink href={'#blog'}>Blog</NavLink>
             <NavLink href={'#Contact'}>Contact</NavLink>
           </div>
           <div className="-mr-1 md:hidden">
