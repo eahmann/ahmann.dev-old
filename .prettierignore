@@ -1,5 +1,6 @@
 .next
 .cache
+.husky
 package-lock.json
 public
 node_modules

@@ -28,6 +28,10 @@ module.exports = {
       fontFamily: {
         roboto: ['Roboto Mono', 'monospace'],
         sans: ['Inter', ...defaultTheme.fontFamily.sans]
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+        cubic: 'transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)'
       }
     }
   },
