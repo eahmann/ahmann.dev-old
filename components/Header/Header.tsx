@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = () => {
     <header id="#">
       <nav
         className={clsx(
-          'top-0 z-100 fixed w-full py-5 px-10 transition duration-[400ms] bg-gray-600',
+          'top-0 z-[1000] fixed w-full py-5 px-10 transition duration-[400ms] bg-gray-600',
           !show && '-translate-y-full'
         )}
       >
