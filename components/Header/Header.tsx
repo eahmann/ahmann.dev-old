@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import { useState, useEffect } from 'react'
 import NavLink from './NavLink'
 import MobileNav from './MobileNav'
+import ButtonLink from '../shared/ButtonLink'
 
 interface HeaderProps {}
 
@@ -40,7 +41,7 @@ const Header: React.FC<HeaderProps> = () => {
     <header id="#">
       <nav
         className={clsx(
-          'top-0 z-[1000] fixed w-full py-5 px-10 transition duration-[400ms] bg-gray-600',
+          'top-0 z-[1000] fixed w-full py-2 px-10 transition duration-[400ms] bg-gray-600',
           !show && '-translate-y-full'
         )}
       >
@@ -48,12 +49,18 @@ const Header: React.FC<HeaderProps> = () => {
           <div className="flex-1 min-w-0">
             <NavLink href={'#'}>ahmann.dev</NavLink>
           </div>
-          <div className="hidden md:flex md:gap-x-6">
+          <div className="hidden md:flex md:gap-x-6 items-center">
             <NavLink href={'#about'}>About</NavLink>
             <NavLink href={'#experience'}>Experience</NavLink>
             <NavLink href={'#projects'}>Projects</NavLink>
             <NavLink href={'#blog'}>Blog</NavLink>
             <NavLink href={'#Contact'}>Contact</NavLink>
+            <ButtonLink
+              link={{ href: 'assets/documents/resume.pdf' }}
+              className="p-2 mt-0"
+            >
+              <span>Resume</span>
+            </ButtonLink>
           </div>
           <div className="-mr-1 md:hidden">
             <MobileNav />

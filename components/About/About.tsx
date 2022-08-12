@@ -1,14 +1,22 @@
 import Container from '../shared/Container'
 import SectionWrapper from '../shared/SectionWrapper/SectionWrapper'
 
-interface AboutProps {}
+interface AboutProps {
+  content: string
+}
 
-const About: React.FC<AboutProps> = () => {
+const About: React.FC<AboutProps> = ({ content }) => {
   return (
     <SectionWrapper id="about" title="About" ariaLabel="">
-      {' '}
-      <div className="h-96 w-full border-2 my-4">
-        <span>Some about me details go here</span>
+      <div className="w-full my-4">
+        <div
+          className={
+            'prose text-gray-300 font-sans max-w-none prose-strong:text-gray-100'
+          }
+          dangerouslySetInnerHTML={{
+            __html: content
+          }}
+        />
       </div>
     </SectionWrapper>
   )

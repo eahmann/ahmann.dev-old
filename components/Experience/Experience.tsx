@@ -34,7 +34,12 @@ const Experience: React.FC<ExperienceProps> = ({ jobs }) => {
     }
   }, [])
   return (
-    <SectionWrapper id="experience" title="Experience" ariaLabel="">
+    <SectionWrapper
+      id="experience"
+      title="Experience"
+      ariaLabel=""
+      className="lg:min-h-[500px]"
+    >
       <Tab.Group
         as="div"
         className="mt-6 grid grid-cols-1 gap-y-2 pt-10 sm:gap-y-6 lg:grid-cols-12 lg:pt-0 "
