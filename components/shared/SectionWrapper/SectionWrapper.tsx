@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import Container from '../Container'
 
 interface SectionWrapperProps {
@@ -19,7 +20,7 @@ const SectionWrapper: React.FC<SectionWrapperProps> = ({
     <section
       id={id}
       aria-label={ariaLabel}
-      className="relative overflow-hidden min-h-[450px] mb-20 pt-16"
+      className={clsx('relative overflow-hidden ', className)}
     >
       <Container className="relative">
         <div className="max-w-2xl xl:max-w-none">
