@@ -5,11 +5,13 @@ company: 'Bind Benefits'
 location: 'Minneapolis, MN (remote)'
 range: 'June 2020 - May 2022'
 url: 'https://www.yourbind.com'
+tech:
+skills:
 ---
 
 - Developed API performance test suite with **Gatling** to monitor the impact of new features.
-- Implmented **A11y** accessibility features in an **Angular** web application.
-- Developed and maintained test coverage for **Angular** and **Spring Boot** features.
-- Used **SQL** to aid in the development of tests.
-- Analyazed and fixed test failures **Jenkins** pipline.
+- Implemented **A11y** accessibility features in an **Angular** web application.
+- Developed **Karma** unit tests for **Angular** UI component library.
+- Developed functional test coverage for **Angular** and **Spring Boot** applications with **Geb** and **Spock**.
+- Analyazed and fixed test failures occurring in the **Jenkins** pipline.
 - Worked with developers to ensured that new UI features matched **Figma** design.
