@@ -6,6 +6,8 @@ import markdownToHtml from '@/utils/markdownToHtml'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+import About from '@/components/About/About'
+import Projects from '@/components/Projects/Projects'
 const Experience = dynamic(() => import('@/components/Experience/Experience'), {
   ssr: false
 })
@@ -24,10 +26,11 @@ const Home: NextPage<Props> = props => {
           content="I'm currently working on personal projects to push my skills to the next level. Check out my portfolio to see what I'm working on."
         />
       </Head>
-      <Header />
       <main>
         <Hero />
+        <About />
         <Experience jobs={props.jobs} />
+        <Projects />
       </main>
     </>
   )

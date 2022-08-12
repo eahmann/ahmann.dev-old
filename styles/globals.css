@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+li::before {
+  content: '▹';
+  color: theme('colors.brand.DEFAULT');
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1.5em;
+}
+
+li {
+  @apply list-none list-outside -ml-3
+}
