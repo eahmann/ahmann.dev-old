@@ -14,6 +14,8 @@ const Experience = dynamic(() => import('@/components/Experience/Experience'), {
 
 type Props = {
   jobs: any
+  about: any
+  projects: any
 }
 
 const Home: NextPage<Props> = props => {
@@ -28,9 +30,9 @@ const Home: NextPage<Props> = props => {
       </Head>
       <main>
         <Hero />
-        <About />
+        <About content={props.about.content} />
         <Experience jobs={props.jobs} />
-        <Projects />
+        <Projects projects={props.projects} />
       </main>
     </>
   )
@@ -69,6 +71,7 @@ export async function getStaticProps(context: any) {
   const test = await markdownToHtml(data.jobs[0].content || '')
   console.log(test)
   data.jobs[0].content = test
+  console.log(data)
 
   return { props: data }
 }
