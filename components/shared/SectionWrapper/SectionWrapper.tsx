@@ -20,7 +20,7 @@ const SectionWrapper: React.FC<SectionWrapperProps> = ({
     <section
       id={id}
       aria-label={ariaLabel}
-      className={clsx('relative overflow-hidden ', className)}
+      className={clsx('relative overflow-hidden mb-96 pt-16', className)}
     >
       <Container className="relative">
         <div className="max-w-2xl xl:max-w-none">
